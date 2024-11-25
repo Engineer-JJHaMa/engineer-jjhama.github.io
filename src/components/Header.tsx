@@ -4,16 +4,30 @@ import React from "react";
 import styled from "styled-components";
 
 const HeaderFrame = styled.div`
-  width: 100%;
-  height: 100px;
-  color: black;
-  background-color: #ffffff;
+  width: 1024px;
+  height: 64px;
+  margin: 0 auto;
+
+  color: white;
+  background-color: #000000;
+
+  display: flex;
+`;
+
+const BlogTitle = styled.div`
+  height: auto;
+
+  font-size: 30px;
+  font-weight: bold;
+
+  align-self: center;
+  vertical-align: center;
 `;
 
 const Header: React.FC = () => {
   return (
     <HeaderFrame>
-      <h1>Header</h1>
+      <BlogTitle>Hama&apos;s Playground!</BlogTitle>
     </HeaderFrame>
   );
 };
